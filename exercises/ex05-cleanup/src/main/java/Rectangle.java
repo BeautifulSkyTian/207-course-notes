@@ -3,8 +3,8 @@ public class Rectangle {
     private double height;
 
     public Rectangle(double w,double h){
-        this.width=w;
-        this.height=h;
+        this.width = w;
+        this.height = h;
     }
 
     public double area(){
@@ -21,9 +21,6 @@ public class Rectangle {
     }
 
     public boolean isLargerThan(Rectangle other){
-        if(area() > other.area())
-            return true;
-        else
-            return false;
+        return area() > other.area();
     }
 }
